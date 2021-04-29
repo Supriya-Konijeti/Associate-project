@@ -29,12 +29,12 @@ public class AssociateServiceImpl implements AssociateService{
     return associateRepo.save(associate);
     }
 
-   /* @Override
+    @Override
     public Associate addSkills(Skills skills) {
         skillrepo.save(skills);
         associate.add(skills);
         return associate;
-    }*/
+    }
 
     @Override
     public List<Associate> displayAllAssociate() {

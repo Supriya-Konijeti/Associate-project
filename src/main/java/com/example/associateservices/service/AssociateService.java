@@ -10,7 +10,7 @@ import java.util.List;
 
 public interface AssociateService {
     public Associate createAssociate(Associate associate);
-    //public Associate addSkills(Skills skills);
+    public Associate addSkills(Skills skills);
     public List<Associate> displayAllAssociate();
     public List<Skills> displaySkills();
     public Associate findById(int id);

@@ -46,7 +46,7 @@ public class AssociateController {
     public ResponseEntity<Associate> getAssociateById(@PathVariable("id") Integer id){
         return ResponseEntity.ok(associateService.findById(id));
     }
-   /* @PostMapping("/addskill/{id}")
+    @PostMapping("/addskill/{id}")
     public Optional<Associate> addSkills(@PathVariable Integer id,@RequestBody Skills skill)
     {
         Optional a=associateRepo.findById(id);
@@ -59,17 +59,18 @@ public class AssociateController {
             associateService.addSkills(skill);
         }
         return a;
-    }*/
-   /* @PutMapping("/associates/{id}")
+    }
+    @PutMapping("/associates/{id}")
     public ResponseEntity<Associate> UpdateById(@PathVariable("id") Integer id ,@RequestBody Associate associate) {
         Associate e = associateService.findById(id);
         e.setFirstName(associate.getFirstName());
         e.setLastName(associate.getLastName());
         e.setEmail(associate.getEmail());
         e.setMobileNo(associate.getMobileNo());
+        e.setSkills(associate.getSkills());
         final Associate Updated = associateRepo.save(e);
         return ResponseEntity.status(HttpStatus.OK).body(Updated);
-    }*/
+    }
    @GetMapping("/list/{keyword}")
     public List<Associate> getAssociates(Model model, String keyword)
     {

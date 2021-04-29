@@ -8,9 +8,9 @@ public class Skills {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
     private String skill;
-/*@ManyToOne
+@ManyToOne
 @JoinColumn(name="associate_id")
-    private Associate associate;*/
+    private Associate associate;
 
     public Skills() {
     }
@@ -36,13 +36,13 @@ public class Skills {
         this.skill = skill;
     }
 
-    /*public Associate getAssociate() {
+    public Associate getAssociate() {
         return associate;
     }
 
     public void setAssociate(Associate associate) {
         this.associate = associate;
-    }*/
+   }
 
     @Override
     public String toString() {

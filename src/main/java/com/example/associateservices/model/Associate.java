@@ -108,7 +108,7 @@ public class Associate {
 
     // add convenience methods for bi-directional relationship
 
-    /*public void add(Skills tempSkill) {
+    public void add(Skills tempSkill) {
 
         if (skills == null) {
             skills = new ArrayList<>();
@@ -117,5 +117,5 @@ public class Associate {
         skills.add(tempSkill);
 
         tempSkill.setAssociate(this);
-    }*/
+    }
 }
